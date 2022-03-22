@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./bootstrap-theme.min.css";
-import "./App.css";
+import "./css/bootstrap-theme.min.css";
+import "./css/App.css";
 
 function App() {
   return <div></div>;
