@@ -127,36 +127,29 @@ body {
   border-color: #468847;
 }
 
-.pokemon {
-  height: 350px;
+.card {
+  width: 18rem;
 }
 
-.pokemon h1 {
+.card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-header h5 {
   margin: 0;
-  color: #fff;
-  font-size: 18px;
 }
 
-.pokemon h1 > small {
-  color: #ccc;
+.card-img,
+.card-footer {
+  background: white;
 }
 
-.pokemon img {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  max-width: 200px;
-  max-height: 220px;
+.card-img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
-.pokemon .panel-body {
-  position: relative;
-  height: 250px;
-}
-
-.pokemon pokemon-type {
-  font-size: 22px;
+.card-footer {
+  text-align: center;
 }
