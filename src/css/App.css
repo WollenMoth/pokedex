@@ -3,6 +3,8 @@ body {
 }
 
 .navbar-brand {
+  align-items: center;
+  display: flex;
   font-weight: 800;
 }
 
