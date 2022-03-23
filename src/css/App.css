@@ -2,6 +2,10 @@ body {
   padding-top: 50px;
 }
 
+[href] {
+  cursor: pointer;
+}
+
 .navbar-brand {
   align-items: center;
   display: flex;
