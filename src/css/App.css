@@ -172,7 +172,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 1.8rem;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .pagination {
