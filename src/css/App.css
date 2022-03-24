@@ -28,6 +28,13 @@ body {
   margin-bottom: 10px;
 }
 
+.page-header {
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
 .form-group {
   padding: 10px;
 }
@@ -159,6 +166,13 @@ body {
 
 .card-footer {
   text-align: center;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.8rem;
+  justify-content: space-between;
 }
 
 .pagination {
