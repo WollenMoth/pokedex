@@ -157,3 +157,7 @@ body {
 .card-footer {
   text-align: center;
 }
+
+.pagination {
+  justify-content: center;
+}
