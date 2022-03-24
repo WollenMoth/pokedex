@@ -26,11 +26,14 @@ function Card({ pokemon }) {
         <BCard.Img src={pokemon.sprites.front_default} />
       </LinkContainer>
       <BCard.Footer>
-        {pokemon.types.map((element) => (
-          <Badge bg={null} className={"type-" + element.type.name}>
-            {capitalize(element.type.name)}
-          </Badge>
-        ))}
+        {pokemon.types.map((element) => {
+          const type = element.type.name;
+          return (
+            <Badge key={type} bg={null} className={"type type-" + type}>
+              {capitalize(type)}
+            </Badge>
+          );
+        })}
       </BCard.Footer>
     </BCard>
   );
