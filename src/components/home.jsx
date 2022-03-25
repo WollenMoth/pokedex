@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect, useState } from "react";
 import HomeHeader from "./homeHeader";
-import Card from "./card";
+import HomeBody from "./homeBody";
 import Pagination from "./common/pagination";
 import http from "../services/http";
 
@@ -41,11 +41,7 @@ function Home(props) {
   return (
     <Fragment>
       <HomeHeader count={pokemons.length} />
-      <div className="card-list">
-        {pokemons.map((pokemon) => (
-          <Card key={pokemon.id} pokemon={pokemon} />
-        ))}
-      </div>
+      <HomeBody pokemons={pokemons} />
       {data.count && (
         <Pagination
           itemsCount={data.count}
