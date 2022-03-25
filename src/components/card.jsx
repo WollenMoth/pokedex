@@ -2,10 +2,7 @@ import React from "react";
 import BCard from "react-bootstrap/Card";
 import Badge from "react-bootstrap/Badge";
 import { LinkContainer } from "react-router-bootstrap";
-
-const capitalize = (s) => {
-  return s.replace(/^./, (c) => c.toUpperCase());
-};
+import { capitalize } from "../utils/capitalize";
 
 function Card({ pokemon }) {
   const base_url = "/pokemon/";
