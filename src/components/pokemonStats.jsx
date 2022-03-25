@@ -5,7 +5,7 @@ import Badge from "react-bootstrap/Badge";
 import PokemonContext from "../context/pokemonContext";
 import { capitalize } from "../utils/capitalize";
 
-function PokemonData({ className }) {
+function PokemonStats({ className }) {
   const { stats } = useContext(PokemonContext);
 
   return (
@@ -25,4 +25,4 @@ function PokemonData({ className }) {
   );
 }
 
-export default PokemonData;
+export default PokemonStats;
