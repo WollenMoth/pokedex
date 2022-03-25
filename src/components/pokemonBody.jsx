@@ -6,11 +6,11 @@ import PokemonInfo from "./pokemonInfo";
 
 function PokemonBody(props) {
   return (
-    <Row className="justify-content-md-center gap-5">
-      <Col md={5}>
+    <Row>
+      <Col md={6}>
         <SpritesCarousel />
       </Col>
-      <Col md={5}>
+      <Col md={6}>
         <PokemonInfo />
       </Col>
     </Row>
