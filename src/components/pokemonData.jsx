@@ -33,9 +33,10 @@ function PokemonData({ className }) {
         label={"Abilities"}
         value={
           <ul>
-            {pokemon.abilities.map((element) => (
-              <li>{capitalize(element.ability.name)}</li>
-            ))}
+            {pokemon.abilities.map((element) => {
+              const ability = element.ability.name;
+              return <li key={ability}>{capitalize(ability)}</li>;
+            })}
           </ul>
         }
       />

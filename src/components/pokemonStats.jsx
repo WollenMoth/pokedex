@@ -12,6 +12,7 @@ function PokemonData({ className }) {
     <ListGroup className={className}>
       {stats.map((element) => (
         <ListItem
+          key={element.stat.name}
           label={capitalize(element.stat.name)}
           value={
             <Badge pill bg="danger">
