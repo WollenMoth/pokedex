@@ -1,18 +1,16 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import Form from "react-bootstrap/Form";
 import FormControl from "react-bootstrap/FormControl";
 import Button from "react-bootstrap/Button";
 
 function Search({ className }) {
   const [search, setSearch] = React.useState("");
-  const navigate = useNavigate();
   const name = "search";
   const label = "Search";
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    navigate(`/pokemon/${search.toLowerCase()}`);
+    window.location = `/pokemon/${search.toLowerCase()}`;
   };
 
   return (
